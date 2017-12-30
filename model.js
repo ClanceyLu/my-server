@@ -12,8 +12,10 @@ const models = {
     title: {type: String, require: true},
     // 文章作者
     author: {type: String, require: true},
+    // 文章分类
+    type: {type: String, require: true},
     // 文章创建时间
-    create_time: {type: Number, default: Date.now},
+    create_time: {type: Date, default: Date.now},
     // 文章标签
     tags: {type: [String], default: []},
     // 文章内容
