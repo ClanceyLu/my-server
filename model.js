@@ -22,7 +22,11 @@ const models = {
     content: {type: String, require: true},
     // 文章概述
     summary: {type: String, require: true},
-  }
+  },
+  admin: {
+    userid: {type: String, require: true},
+    pwd: {type: String, require: true},
+  },
 }
 
 // 创建model

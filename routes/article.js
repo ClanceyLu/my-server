@@ -15,7 +15,7 @@ Router.get('/list', (req, res) => {
     if (err) {
       res.json({code: 0, msg: err})
     }
-    res.json({code: 1, data: doc, msg: ''})
+    res.json({code: 1, data: doc, msg: 'suc'})
   })
 })
 
@@ -26,7 +26,7 @@ Router.get('/content', (req, res) => {
     if (err) {
       res.json({code: 0, msg: err})
     }
-    res.json({code: 1, data: doc, msg: ''})
+    res.json({code: 1, data: doc, msg: 'suc'})
   })
 })
 
