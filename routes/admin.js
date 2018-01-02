@@ -10,6 +10,7 @@ Router.post('/login', (req, res) => {
       res.json({code: 0, msg: err})
     }
     if (doc) {
+      res.cookie('userid', doc._id)
       res.json({code: 1, data: doc, mdg: 'suc'})
     }
   })
