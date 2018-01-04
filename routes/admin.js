@@ -31,4 +31,16 @@ Router.post('/add', (req, res) => {
   )
 })
 
+Router.get('/articlelist', (req, res) => {
+  Article.find({}, (err, doc) => {
+    if (err) {
+      res.json({code: 0, msg: err})
+    }
+    if (doc) {
+      console.log(doc);
+      res.json({code: 1, data: doc, msg: 'suc'})
+    }
+  })
+})
+
 module.exports = Router
